@@ -6,7 +6,7 @@
     <h1>Proyecto</h1>
 
     <h2>{{ post.title }}</h2>
-    <h3 class="my-2 h5 text-ligh-muted ">{{ post.date|date:'M d Y'|upper }}</h3>
+    <a href="{{ post.url }}" class="btn btn-light rounded-0 btn-sm" target="_blank">{{ post.url }}</a>
 
     <div class="my-4">
         <p>{{ post.description|safe }}</p>
