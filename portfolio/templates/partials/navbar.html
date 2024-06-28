@@ -1,20 +1,12 @@
 {% load static %}
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
+  <div class="container">
       <a class="navbar-brand fw-bold fst-italic" href="/">Alex Hernandez</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url  'blog:posts' %}">Portafolio Git</a>
-          </li>
-          <li class="nav-item d-flex align-items-center">
-            <a class="btn btn-primary btn-sm" href="{% static 'portfolio/document.pdf' %}" target="_blank">Descargar CV</a>
-          </li>
-        </ul>
+
+      <!-- Enlaces de navegación y botón alineados horizontalmente -->
+      <div class="navbar-nav ms-auto d-flex align-items-center">
+          <a class="nav-link active" aria-current="page" href="{% url 'blog:posts' %}">Portafolio Git</a>
+          <a class="btn btn-primary btn-sm ms-2" href="{% static 'portfolio/document.pdf' %}" target="_blank">Descargar CV</a>
       </div>
-    </div>
-  </nav>
+  </div>
+</nav>
